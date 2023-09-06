@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './index.module.css';
-import Background from './component/Background';
+import Background from '../component/Background';
 
 export default function Home() {
   return (
