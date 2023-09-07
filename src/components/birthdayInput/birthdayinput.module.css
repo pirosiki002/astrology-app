@@ -1,0 +1,31 @@
+/* src/components/birthdayInput/birthdayinput.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7); /* 半透明の黒背景で入力項目を強調 */
+  padding: 20px;
+  border-radius: 10px; /* 角を丸く */
+  width: 300px; /* 適切なサイズに調整 */
+}
+
+.label {
+  font-size: 24px;
+  color: white; /* 星空の背景に合わせて白文字 */
+  margin-bottom: 10px; /* 入力欄との間隔 */
+  font-family: 'Arial', sans-serif; /* おしゃれなフォントに変更 */
+}
+
+.input {
+  font-size: 20px;
+  padding: 10px; /* 入力領域を大きくする */
+  width: 100%; /* コンテナの幅に合わせて拡大 */
+  color: white; /* 星空の背景に合わせて白文字 */
+  background-color: rgba(255, 255, 255, 0.2); /* 半透明の白背景 */
+  border: 2px solid white;
+  border-radius: 5px; /* 角を丸く */
+  outline: none; /* フォーカス時のアウトラインを削除 */
+}
+
+.input:focus {
+  border-color: #8888FF; /* フォーカス時のボーダーカラー */
+}
