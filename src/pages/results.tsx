@@ -5,11 +5,16 @@ import Background from 'src/components/background';
 
 const Results: React.FC = () => {
   const router = useRouter();
-  const birthdate = router.query.birthdate as string;
+  const birthdate = router.query.birthdate as string | undefined;
+  if(!birthdate){
+    return <div>Loading...</div>;
+  }
+
   const zodiacSign = determineZodiac(birthdate);
 
   // 星座を求める関数
   function determineZodiac(date: string): string {
+    if (!date) return '不明な星座';
     const [year, month, day] = date.split('-').map(str => parseInt(str, 10));
 
     if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) return '牡羊座';
