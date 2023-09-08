@@ -9,8 +9,21 @@ import Link from 'next/link';
 const Results: React.FC = () => {
   const router = useRouter();
   const birthdate = router.query.birthdate as string | undefined;
-  if(!birthdate){
-    return <div>Loading...</div>;
+  // Results component
+  if (!birthdate) {
+    // preventDefaultで防いでいるため、ここの処理は基本通らない。
+    return (
+      <div className={classes.container}>
+        <Background />
+        <TransparentBox>
+          <h1 className={classes.title}>エラー</h1>
+          <p className={classes.text}>生年月日が入力されていません。</p>
+          <Link href='/'>
+            <Button label='トップへ戻る' />
+          </Link>
+        </TransparentBox>
+      </div>
+    );
   }
 
   const zodiacSign = determineZodiac(birthdate);
