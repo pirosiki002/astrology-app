@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import classes from 'src/pages/results.module.css';
 import Background from 'src/components/background';
 import TransparentBox from '../components/transparent/transparentBox';
+import Button from '../components/button';
+import Link from 'next/link';
 
 const Results: React.FC = () => {
   const router = useRouter();
@@ -41,6 +43,9 @@ const Results: React.FC = () => {
         <h1 className={classes.title}>結果</h1>
         <p className={classes.text}>入力された生年月日: {birthdate}</p>
         <p className={classes.text}>あなたの星座は: {zodiacSign}</p>
+        <Link href='/'>
+          <Button label='トップへ戻る' />
+        </Link>
       </TransparentBox>
 
     </div>
