@@ -54,8 +54,10 @@ const Results: React.FC = () => {
       <Background />
       <TransparentBox>
         <h1 className={classes.title}>結果</h1>
-        <p className={classes.text}>入力された生年月日: {birthdate}</p>
-        <p className={classes.text}>あなたの星座は: {zodiacSign}</p>
+        <p className={classes.text}>入力された生年月日:</p>
+        <p className={classes.text}>{birthdate}</p>
+        <p className={classes.text}>あなたの星座は:</p>
+        <p className={classes.text}>{zodiacSign}</p>
         <div className={classes.buttonSpace}>
           <Link href='/'>
             <Button label='トップへ戻る' />

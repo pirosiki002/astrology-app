@@ -4,6 +4,7 @@
   justify-content: center; /* 縦方向の中央揃え */
   align-items: center;     /* 横方向の中央揃え */
   height: 100vh;           /* 画面の高さを100%に設定 */
+  width: 100%;
   position: relative;      /* 背景画像のz-indexのためにpositionを設定 */
 }
 

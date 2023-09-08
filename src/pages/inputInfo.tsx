@@ -25,7 +25,7 @@ export default function Home() {
     <div className={classes.container}>
       <Background />
       <TransparentBox>
-        <h1 className={classes.title}>情報を入力してください</h1>
+        <h1 className={classes.title}>情報を入力</h1>
         <BirthdateInput onBirthdateChange={setBirthdate} />
         <div className={classes.buttonSpace}>
           <Link href={`/results?birthdate=${birthdate}`}>
