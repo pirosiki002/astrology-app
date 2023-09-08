@@ -25,11 +25,13 @@ export default function Home() {
     <div className={classes.container}>
       <Background />
       <TransparentBox>
-        <h1>情報を入力してください</h1>
+        <h1 className={classes.title}>情報を入力してください</h1>
         <BirthdateInput onBirthdateChange={setBirthdate} />
-        <Link href={`/results?birthdate=${birthdate}`}>
-          <Button label="結果" onClick={handleButtonClick}/>
-        </Link>
+        <div className={classes.buttonSpace}>
+          <Link href={`/results?birthdate=${birthdate}`}>
+            <Button label="結果" onClick={handleButtonClick}/>
+          </Link>
+        </div>
       </TransparentBox>
     </div>
   )

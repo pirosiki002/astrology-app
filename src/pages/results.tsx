@@ -18,8 +18,8 @@ const Results: React.FC = () => {
         <TransparentBox>
           <h1 className={classes.title}>エラー</h1>
           <p className={classes.text}>生年月日が入力されていません。</p>
-          <Link href='/'>
-            <Button label='トップへ戻る' />
+          <Link href='/' >
+            <Button label='トップへ戻る' className={classes.buttonSpace}/>
           </Link>
         </TransparentBox>
       </div>
@@ -56,9 +56,11 @@ const Results: React.FC = () => {
         <h1 className={classes.title}>結果</h1>
         <p className={classes.text}>入力された生年月日: {birthdate}</p>
         <p className={classes.text}>あなたの星座は: {zodiacSign}</p>
-        <Link href='/'>
-          <Button label='トップへ戻る' />
-        </Link>
+        <div className={classes.buttonSpace}>
+          <Link href='/'>
+            <Button label='トップへ戻る' />
+          </Link>
+        </div>
       </TransparentBox>
 
     </div>

@@ -5,7 +5,7 @@ import classes from "src/components/button/button.module.css";
 
 interface ButtonProps {
   label: string;
-  // onClick?: () => void;
+  className?: string;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   href?: string;
   variant?: 'primary' | 'secondary' | 'tertiary';
