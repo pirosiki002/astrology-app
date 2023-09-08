@@ -12,10 +12,10 @@
 .title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #fff; /* 色は背景に合わせて調整してください */
+  color: #000; /* 色は背景に合わせて調整してください */
 }
 
 .text {
   font-size: 1.5rem;
-  color: #fff; /* 色は背景に合わせて調整してください */
+  color: #000; /* 色は背景に合わせて調整してください */
 }
