@@ -1,0 +1,38 @@
+{
+  "Aries": {
+    "03-27-2023": {
+      "description": "Monday, March 27th, 2023 - Aries may start the week feeling energized and ready to tackle any challenges that come their way. The moon is in Leo, which could enhance Aries' confidence and self-assurance. However, it's important for Aries to keep their impulsive nature in check, especially in the workplace or when dealing with authority figures. On this day in history, the first-ever Nobel Prize was awarded in 1901, which could inspire Aries to pursue their own intellectual pursuits.",
+      "color": "Turquoise",
+      "compatibility": "Libra",
+      "lucky_number": "59",
+      "lucky_time": "14:30",
+      "mood": "Relaxed"
+    },
+    "03-28-2023": {
+      "description": "Tuesday, March 28th, 2023 - Aries may feel a bit more introspective today as the moon shifts into Virgo. This could be a good time for Aries to focus on their own personal growth and self-improvement. Aries may also feel inclined to help others, which could lead to a sense of fulfillment. On this day in history, the Hubble Space Telescope was launched in 1990, which could inspire Aries to explore the mysteries of the universe.",
+      "color": "Bronze",
+      "compatibility": "Pisces",
+      "lucky_number": "100",
+      "lucky_time": "00:30",
+      "mood": "Observant"
+    }
+  },
+  "Taurus": {
+    "03-27-2023": {
+      "description": "March 27th, 2023 (Monday): Today, Taurus individuals may feel a bit scattered and unfocused, which could make it challenging to stay on track with their goals. It's important to stay grounded and maintain a routine to avoid feeling overwhelmed. On this day in 1964, the Good Friday earthquake occurred in Alaska, the most powerful earthquake in U.S. history, which may serve as a reminder for Taurus to remain resilient in the face of unexpected challenges.",
+      "color": "Green",
+      "compatibility": "Gemini",
+      "lucky_number": "16",
+      "lucky_time": "05:00",
+      "mood": "Excited"
+    },
+    "03-28-2023": {
+      "description": "March 28th, 2023 (Tuesday): This is a good day for Taurus to focus on their finances and work on creating a solid budget. Taurus individuals are known for being practical and responsible with money, so taking some time to review their finances can help them feel more secure and in control. On this day in 1979, the Three Mile Island nuclear power plant experienced a partial meltdown, which may serve as a reminder for Taurus to be cautious and responsible in all areas of their life.",
+      "color": "Orange",
+      "compatibility": "Taurus",
+      "lucky_number": "7",
+      "lucky_time": "02:00",
+      "mood": "Happy"
+    }
+  }
+}
