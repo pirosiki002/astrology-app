@@ -1,18 +1,9 @@
 import { useState, useEffect } from "react";
-
-// 占いのデータを格納する型
-type HoroscopeInfo = {
-  description: string;
-  color: string;
-  compatibility: string;
-  lucky_number: string;
-  lucky_time: string;
-  mood: string;
-};
+import { HoroscopeEntry } from "../types/horoscope";
 
 const HoroscopePage = () => {
   // ステートとして占いのデータを保持
-  const [horoscopeInfo, setHoroscopeInfo] = useState<HoroscopeInfo | null>(
+  const [horoscopeInfo, setHoroscopeInfo] = useState<HoroscopeEntry | null>(
     null
   );
 
