@@ -43,16 +43,15 @@ const Results: React.FC = () => {
   const router = useRouter();
   const birthdate = router.query.birthdate as string;
   const [todayHoroscope, setTodayHoroscope] = useState<any>(null);
-  const zodiacSign = determineZodiac(birthdate) as ZodiacSigns;
+  const [zodiacSign, setZodiacSign] = useState<ZodiacSigns | null>(null);
 
   useEffect(() => {
-    // router.isReadyをチェックして、クエリの値が設定されていることを確認
     if (!router.isReady) return;
-
     const birthdate = router.query.birthdate as string;
-
-    // birthdateが存在する場合のみ以下の処理を実行する
     if (!birthdate) return;
+
+    const determinedZodiac = determineZodiac(birthdate) as ZodiacSigns;
+    setZodiacSign(determinedZodiac);
 
     const zodiacSign = determineZodiac(birthdate) as ZodiacSigns;
     const today = new Date().toISOString().split("T")[0];
