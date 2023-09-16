@@ -46,6 +46,9 @@ const Results: React.FC = () => {
   const zodiacSign = determineZodiac(birthdate) as ZodiacSigns;
 
   useEffect(() => {
+    // router.isReadyをチェックして、クエリの値が設定されていることを確認
+    if (!router.isReady) return;
+
     const birthdate = router.query.birthdate as string;
 
     // birthdateが存在する場合のみ以下の処理を実行する
@@ -54,7 +57,6 @@ const Results: React.FC = () => {
     const zodiacSign = determineZodiac(birthdate) as ZodiacSigns;
     const today = new Date().toISOString().split("T")[0];
     const [year, month, day] = today.split("-").map((str) => parseInt(str, 10));
-    // const formattedDate = `${month}-${day}-${year}`;
     const formattedDate = `${month.toString().padStart(2, "0")}-${day
       .toString()
       .padStart(2, "0")}-${year}`;
@@ -73,7 +75,7 @@ const Results: React.FC = () => {
     console.log("zodiacSign:", zodiacSign);
     console.log("formattedDate:", formattedDate);
     console.log("horoscopeDetails:", horoscopeDetails);
-  }, [router.query]);
+  }, [router.query, router.isReady]); // router.isReadyを依存配列にも追加
 
   // Results component
   if (!birthdate) {
