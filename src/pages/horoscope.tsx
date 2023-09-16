@@ -8,8 +8,8 @@ const HoroscopePage = () => {
   );
 
   useEffect(() => {
-    // サンプルとしてAriesの03-27-2023のデータをフェッチします
-    fetch("/api/horoscope?sign=Aries&date=03-27-2023")
+    // サンプルとしてTaurusの03-27-2023のデータをフェッチします
+    fetch("/api/horoscope?sign=Taurus&date=03-27-2023")
       .then((res) => res.json())
       .then((data) => {
         setHoroscopeInfo(data);
